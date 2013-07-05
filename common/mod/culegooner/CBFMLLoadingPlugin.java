@@ -3,9 +3,10 @@ package mod.culegooner;
 import java.io.File;
 import java.util.Map;
 
-import cpw.mods.fml.relauncher.IFMLLoadingPlugin;
+import cpw.mods.fml.relauncher.IFMLLoadingPlugin.MCVersion;
 
-public class CBFMLLoadingPlugin implements IFMLLoadingPlugin {
+@MCVersion(value = "1.6.1")
+public class CBFMLLoadingPlugin implements cpw.mods.fml.relauncher.IFMLLoadingPlugin {
 
 	
 	public static File location;

@@ -1,7 +1,6 @@
 package mod.culegooner;
 
 import mod.culegooner.proxy.CommonProxy;
-import net.minecraftforge.common.MinecraftForge;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.SidedProxy;
@@ -9,10 +8,6 @@ import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
 import cpw.mods.fml.common.network.NetworkMod;
-import cpw.mods.fml.common.registry.EntityRegistry;
-import cpw.mods.fml.common.registry.LanguageRegistry;
-
-
 
 
 @Mod(modid = CreeperBurnCoreLib.MOD_ID, name = CreeperBurnCoreLib.MOD_NAME, version = CreeperBurnCoreLib.VERSION_NUMBER)

@@ -5,9 +5,7 @@ import java.io.InputStream;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
 
-import net.minecraft.launchwrapper.IClassTransformer;
-
-public class CBClassTransformer implements IClassTransformer {
+public class CBClassTransformer implements net.minecraft.launchwrapper.IClassTransformer {
 
 	@Override
 	public byte[] transform(String arg0, String arg1, byte[] arg2) {
