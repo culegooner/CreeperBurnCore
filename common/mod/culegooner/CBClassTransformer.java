@@ -9,8 +9,9 @@ public class CBClassTransformer implements net.minecraft.launchwrapper.IClassTra
 
 	@Override
 	public byte[] transform(String arg0, String arg1, byte[] arg2) {
-		System.out.println("********* INSIDE TRANSFORMER: " + arg0);
-		if (arg0.equals("tc") || arg0.equals("EntityCreeper")) {
+		
+		if (arg0.equals("tc") || arg0.equals("net.minecraft.entity.monster.EntityCreeper")) {
+			System.out.println("********* INSIDE TRANSFORMER: " + arg0);
 			arg2 = patchClassInJar(arg0, arg2, arg0, CBFMLLoadingPlugin.location);
         }
         return arg2;

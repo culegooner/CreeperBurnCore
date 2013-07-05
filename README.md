@@ -9,7 +9,10 @@ Do not install this mod along with CreeperBurnMod.
 
 To use in development:
 Add the modified base classes inside CreeperBurnCore_dummy.jar
-Copy CreeperBurnCore_dummy.jar to jars/coremods
+Copy CreeperBurnCore_dummy.jar to jars/mods
+
+The base classes are inside CreeperBurnCore_dummy.jar
+net/minecraft/entity/monster/EntityCreeper.class
 
 This is part of a tutorial on forge 1.6.1 events and coremods
 

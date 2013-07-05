@@ -19,9 +19,7 @@ public class CBFMLLoadingPlugin implements cpw.mods.fml.relauncher.IFMLLoadingPl
 
 	@Override
 	public String[] getASMTransformerClass() {
-		//return new String[]{CBClassTransformer.class.getName()};
-		System.out.println("***************WOOOOOOOHOOOOOOOOOOO Inside getASMTransformerClass" );
-		return new String[] { "mod.culegooner.CBClassTransformer" };
+		return new String[]{CBClassTransformer.class.getName()};
 	}
 
 	@Override
@@ -39,7 +37,7 @@ public class CBFMLLoadingPlugin implements cpw.mods.fml.relauncher.IFMLLoadingPl
 	@Override
 	public void injectData(Map<String, Object> data) {
 		location = (File) data.get("coremodLocation");
-System.out.println("***************WOOOOOOOHOOOOOOOOOOO : location.getName: " +location.getName());
+		System.out.println("***************WOOOOOOOHOOOOOOOOOOO : location.getName: " +location.getName());
 	}
 
 }
