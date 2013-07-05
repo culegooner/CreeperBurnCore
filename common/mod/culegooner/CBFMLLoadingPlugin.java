@@ -19,6 +19,7 @@ public class CBFMLLoadingPlugin implements IFMLLoadingPlugin {
 	@Override
 	public String[] getASMTransformerClass() {
 		//return new String[]{CBClassTransformer.class.getName()};
+		System.out.println("***************WOOOOOOOHOOOOOOOOOOO Inside getASMTransformerClass" );
 		return new String[] { "mod.culegooner.CBClassTransformer" };
 	}
 
@@ -37,7 +38,7 @@ public class CBFMLLoadingPlugin implements IFMLLoadingPlugin {
 	@Override
 	public void injectData(Map<String, Object> data) {
 		location = (File) data.get("coremodLocation");
-
+System.out.println("***************WOOOOOOOHOOOOOOOOOOO : location.getName: " +location.getName());
 	}
 
 }

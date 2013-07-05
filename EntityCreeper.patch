@@ -1,0 +1,43 @@
+diff -ruN forge/mcp/src/minecraft/net/minecraft/entity/monster/EntityCreeper.java baseEdits/src/minecraft/net/minecraft/entity/monster/EntityCreeper.java
+--- forge/mcp/src/minecraft/net/minecraft/entity/monster/EntityCreeper.java	2013-07-05 01:53:38.371694000 +0300
++++ baseEdits/src/minecraft/net/minecraft/entity/monster/EntityCreeper.java	2013-07-05 04:30:19.532552800 +0300
+@@ -19,6 +19,7 @@
+ import net.minecraft.item.Item;
+ import net.minecraft.nbt.NBTTagCompound;
+ import net.minecraft.util.DamageSource;
++import net.minecraft.util.MathHelper;
+ import net.minecraft.world.World;
+ 
+ public class EntityCreeper extends EntityMob
+@@ -259,4 +260,31 @@
+         super.onStruckByLightning(par1EntityLightningBolt);
+         this.dataWatcher.updateObject(17, Byte.valueOf((byte)1));
+     }
++    
++    /**
++     * Called frequently so the entity can update its state every tick as required. For example, zombies and skeletons
++     * use this to react to sunlight and start to burn.
++     */
++    public void onLivingUpdate()
++    {
++        if (this.worldObj.isDaytime() && !this.worldObj.isRemote)
++        {
++            float f = this.getBrightness(1.0F);
++
++            if (f > 0.5F && this.rand.nextFloat() * 30.0F < (f - 0.4F) * 2.0F && this.worldObj.canBlockSeeTheSky(MathHelper.floor_double(this.posX), MathHelper.floor_double(this.posY), MathHelper.floor_double(this.posZ)))
++            {
++                boolean flag = true;
++               
++                if (flag)
++                {
++                    this.setFire(8);
++                }
++            }
++        }
++
++      
++
++        super.onLivingUpdate();
++    }
++
+ }
