@@ -37,7 +37,7 @@ public class CBFMLLoadingPlugin implements cpw.mods.fml.relauncher.IFMLLoadingPl
 	@Override
 	public void injectData(Map<String, Object> data) {
 		location = (File) data.get("coremodLocation");
-		System.out.println("***************WOOOOOOOHOOOOOOOOOOO : location.getName: " +location.getName());
+		//System.out.println("*** Transformer jar location location.getName: " +location.getName());
 	}
 
 }
