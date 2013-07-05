@@ -1,0 +1,20 @@
+[
+{
+  "modid": "CreeperBurnCore",
+  "name": "CreeperBurnCore",
+  "description": "CreeperBurnCore",
+  "version": "1.0.0",
+  "url": "",
+  "updateUrl": "",
+  "authorList": [
+    "culegooner"
+  ],
+  "credits": "By culegooner",
+  "logoFile": "",
+  "screenshots": [
+  ],
+  "parent":"",
+  "dependencies": [
+  ]
+}
+]

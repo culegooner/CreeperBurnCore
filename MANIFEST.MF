@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+FMLCorePlugin: mod.culegooner.CBFMLLoadingPlugin
+Created-By: 1.7.0 (Oracle Corporation)
