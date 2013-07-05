@@ -3,6 +3,8 @@ CreeperBurnCore
 
 https://github.com/culegooner/CreeperBurnCore
 
+To download the binary click here https://github.com/culegooner/CreeperBurnCore/releases
+
 This is a coremod for minecraft forge 1.6.1
 it patches the minecraft EntityCreeper class.
 Do not install this mod along with CreeperBurnMod.
