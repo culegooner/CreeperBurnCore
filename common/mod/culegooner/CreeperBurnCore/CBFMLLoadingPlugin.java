@@ -19,6 +19,7 @@ public class CBFMLLoadingPlugin implements cpw.mods.fml.relauncher.IFMLLoadingPl
 
 	@Override
 	public String[] getASMTransformerClass() {
+	//This will return the name of the class "mod.culegooner.CreeperBurnCore.CBClassTransformer"
 		return new String[]{CBClassTransformer.class.getName()};
 	}
 
@@ -36,6 +37,7 @@ public class CBFMLLoadingPlugin implements cpw.mods.fml.relauncher.IFMLLoadingPl
 
 	@Override
 	public void injectData(Map<String, Object> data) {
+		//This will return the jar file of this mod CreeperBurnCore_dummy.jar"
 		location = (File) data.get("coremodLocation");
 		//System.out.println("*** Transformer jar location location.getName: " +location.getName());
 	}
