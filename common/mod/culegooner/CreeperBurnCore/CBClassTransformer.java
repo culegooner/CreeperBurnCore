@@ -1,4 +1,4 @@
-package mod.culegooner;
+package mod.culegooner.CreeperBurnCore;
 
 import java.io.File;
 import java.io.InputStream;
