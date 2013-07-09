@@ -11,7 +11,7 @@ public class CBClassTransformer implements net.minecraft.launchwrapper.IClassTra
 	public byte[] transform(String arg0, String arg1, byte[] arg2) {
 		
 		//Check if the JVM is about to process the tc.class or the EntityCreeper.class
-		if (arg0.equals("tc") || arg0.equals("net.minecraft.entity.monster.EntityCreeper")) {
+		if (arg0.equals("te") || arg0.equals("net.minecraft.entity.monster.EntityCreeper")) {
 			System.out.println("********* INSIDE CREEPER TRANSFORMER ABOUT TO PATCH: " + arg0);
 			arg2 = patchClassInJar(arg0, arg2, arg0, CBFMLLoadingPlugin.location);
         }
@@ -27,7 +27,7 @@ public class CBClassTransformer implements net.minecraft.launchwrapper.IClassTra
 	        try {
 	        	//open the jar as zip
 	            ZipFile zip = new ZipFile(location);
-	          //find the file inside the zip that is called tc.class or net.minecraft.entity.monster.EntityCreeper.class
+	          //find the file inside the zip that is called te.class or net.minecraft.entity.monster.EntityCreeper.class
 	          //replacing the . to / so it would look for net/minecraft/entity/monster/EntityCreeper.class
 	            ZipEntry entry = zip.getEntry(name.replace('.', '/') + ".class");
 	            if (entry == null) {

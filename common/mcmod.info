@@ -3,8 +3,8 @@
   "modid": "CreeperBurnCore",
   "name": "CreeperBurnCore",
   "description": "CreeperBurnCore",
-  "version": "1.0.1",
-  "url": "",
+  "version": "@VERSION@",
+  "url": "https://github.com/culegooner/CreeperBurnCore",
   "updateUrl": "",
   "authorList": [
     "culegooner"
