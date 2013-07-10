@@ -23,7 +23,7 @@ public class CBDummyContainer extends DummyModContainer {
 		meta.credits = "Roll Credits ...";
 		meta.authorList = Arrays.asList("culegooner");
 		meta.description = "";
-		meta.url = "https://github.com/culegooner/CreeperBurnCore";
+		meta.url = "http://www.minecraftforum.net/topic/1884425-";
 		meta.updateUrl = "";
 		meta.screenshots = new String[0];
 		meta.logoFile = "";
