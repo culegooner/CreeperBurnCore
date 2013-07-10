@@ -25,8 +25,8 @@ public class CBFMLLoadingPlugin implements cpw.mods.fml.relauncher.IFMLLoadingPl
 
 	@Override
 	public String getModContainerClass() {
-		// TODO Auto-generated method stub
-		return null;
+		//This is the name of our dummy container "mod.culegooner.CreeperBurnCore.CBDummyContainer"
+		return CBDummyContainer.class.getName();
 	}
 
 	@Override
